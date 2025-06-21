@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Facebook, Instagram, Mail, MapPin, Phone, PenToolIcon as Tool } from "lucide-react";
+import { Instagram, Mail, MapPin, Phone, PenToolIcon as Tool } from "lucide-react";
+import { FacebookIcon } from "@/app/icons";
 
 export default function Footer() {
   return (
@@ -74,7 +75,7 @@ export default function Footer() {
             </ul>
             <div className="flex gap-4 mt-4">
               <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
-                <Facebook className="h-5 w-5" />
+                <FacebookIcon className="h-5 w-5 " />
               </a>
               <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
                 <Instagram className="h-5 w-5" />

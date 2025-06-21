@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 //import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import ChatBot from "@/components/ChatBot";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -27,7 +29,9 @@ export default function RootLayout({
     <html lang="es">
       <body className="bg-gray-50 antialiased">
         <Header />
-        {children}
+        <main className="container bg-gray mx-auto px-4 py-8">{children}</main>
+        <Footer />
+        <ChatBot />
       </body>
     </html>
   );
