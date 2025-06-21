@@ -16,7 +16,7 @@ import Header from "@/components/Header";
 export const metadata: Metadata = {
   title: "Precision Machining Workshop",
   description: "Expert lathe and milling services for all your machining needs",
-}
+};
 
 export default function RootLayout({
   children,

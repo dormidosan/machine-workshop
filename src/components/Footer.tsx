@@ -1,9 +1,9 @@
-import Link from "next/link"
-import { Facebook, Instagram, Mail, MapPin, Phone, PenToolIcon as Tool } from "lucide-react"
+import Link from "next/link";
+import { Facebook, Instagram, Mail, MapPin, Phone, PenToolIcon as Tool } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className='bg-gray-800 text-white pt-8 pb-6'>
+    <footer className="bg-gray-800 text-white pt-8 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
@@ -29,17 +29,26 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                <Link
+                  href="/about"
+                  className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
+                >
                   Nosotros
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                <Link
+                  href="/services"
+                  className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
+                >
                   Servicios
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                <Link
+                  href="/contact"
+                  className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
+                >
                   Contacto
                 </Link>
               </li>
@@ -79,6 +88,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
