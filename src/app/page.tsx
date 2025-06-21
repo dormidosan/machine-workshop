@@ -56,7 +56,7 @@ export default function Home() {
           <DefaultButton asChild size="lg" className="px-8">
             <Link href="/services">Nuestros Servicios</Link>
           </DefaultButton>
-          <OutlineButton asChild size="lg" className="px-8">
+          <OutlineButton asChild size="lg" className="px-8 bg-gray-100 hover:bg-gray-200">
             <Link href="/contact">Contáctanos</Link>
           </OutlineButton>
         </div>
@@ -173,7 +173,7 @@ export default function Home() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/images/rotate-1136053_1280.webp"
                 alt="Molde de inyección"
                 fill
                 style={{ objectFit: "cover" }}
@@ -228,7 +228,7 @@ export default function Home() {
             Contáctanos hoy mismo para discutir tu proyecto y obtener una cotización personalizada. Nuestro
             equipo de expertos está listo para ayudarte.
           </p>
-          <DefaultButton asChild size="lg" className="px-8">
+          <DefaultButton asChild size="lg" className="px-8 ">
             <Link href="/contact">Solicitar Cotización</Link>
           </DefaultButton>
         </div>

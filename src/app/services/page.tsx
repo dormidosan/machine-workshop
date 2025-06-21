@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/Card";
 
-export default function Services() {
-  const services = [
+export default function servicios() {
+  const servicios = [
     {
       title: "Fabricación de Moldes",
 
@@ -16,8 +16,7 @@ export default function Services() {
         "Mecanizado de insertos y componentes para moldes.",
       ],
 
-      image:
-        "https://plus.unsplash.com/premium_photo-1682144572574-2305752c0f63?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/servicios/milling_2.webp",
     },
 
     {
@@ -37,8 +36,7 @@ export default function Services() {
         "Rectificado de agujeros y discos de freno.",
       ],
 
-      image:
-        "https://plus.unsplash.com/premium_photo-1682144932026-f5ea5364757a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/servicios/lathe2.webp",
     },
 
     {
@@ -54,8 +52,7 @@ export default function Services() {
         "Mecanizado de piezas e insertos para moldes. ",
       ],
 
-      image:
-        "https://plus.unsplash.com/premium_photo-1661963276567-44f7b173be9d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/servicios/milling3.webp",
     },
 
     {
@@ -69,8 +66,7 @@ export default function Services() {
         "Mecanizado de moldes e insertos con grabados en ángulos y formas.",
       ],
 
-      image:
-        "https://images.unsplash.com/photo-1611117775350-ac3950990985?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/servicios/cnc2.webp",
     },
 
     {
@@ -84,8 +80,7 @@ export default function Services() {
         "Fabricación de muestras y figuras de molde.",
       ],
 
-      image:
-        "https://images.unsplash.com/photo-1611117775350-ac3950990985?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/servicios/tools.webp",
     },
 
     {
@@ -93,8 +88,7 @@ export default function Services() {
 
       description: ["Soldadura eléctrica.", "Afilado de cuchillas.", "Rectificado de piezas."],
 
-      image:
-        "https://images.unsplash.com/photo-1611117775350-ac3950990985?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/servicios/tools2.webp",
     },
   ];
 
@@ -107,22 +101,25 @@ export default function Services() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {services.map((service, index) => (
-          <Card key={index} className="overflow-hidden">
-            <div className="relative h-48">
+        {servicios.map((service, index) => (
+          <Card
+            key={index}
+            className=" gap-6 rounded-xl border-2 py-6 shadow-xl border-[#e5e5e5]  overflow-hidden "
+          >
+            <div className="relative h-70 mx-20 rounded-sm overflow-hidden">
               <Image
                 src={service.image || "/placeholder.svg"}
                 alt={service.title}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: "cover" }}
               />
             </div>
 
             <CardHeader>
-              <CardTitle>{service.title}</CardTitle>
+              <CardTitle className="text-2xl font-bold">{service.title}</CardTitle>
             </CardHeader>
 
-            <CardContent>
+            <CardContent className="text-ms">
               <p>
                 {service.description.map((desc, index) => (
                   <span key={index}>

@@ -9,6 +9,10 @@ interface DefaultButtonProps extends React.ComponentProps<typeof ButtonBase> {
   className?: string;
 }
 
+export function BasicButton({ className = "", ...props }: DefaultButtonProps) {
+  return <ButtonBase className={className} {...props} />;
+}
+
 export function DefaultButton({ size = "default", className = "", ...props }: DefaultButtonProps) {
   return (
     <ButtonBase

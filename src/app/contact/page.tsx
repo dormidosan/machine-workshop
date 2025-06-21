@@ -5,7 +5,7 @@ import { Textarea } from "@/components/TextArea";
 export default function Contact() {
   return (
     <div className="space-y-6">
-      <h1 className="text-4xl font-bold">Encuentranos</h1>
+      <h1 className="text-4xl font-bold">Encuéntranos</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="aspect-square w-full">
@@ -22,7 +22,7 @@ export default function Contact() {
         <div className="space-y-4">
           <div className="relative h-48 w-full">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/location-AlFQOwnDAzHRtroU1ye3MJHgbBVCYA.webp"
+              src="/images/direccion.webp"
               alt="Entrada principal del taller Metalyplast"
               layout="fill"
               objectFit="cover"
@@ -31,34 +31,36 @@ export default function Contact() {
           </div>
 
           <div className="text-sm">
-            <h2 className="text-xl font-semibold">Nuestra Ubicación</h2>
+            <h2 className="text-xl font-semibold">Nuestra ubicación</h2>
 
             <p>Calle Principal, San Salvador, El Salvador</p>
           </div>
 
           <div className="text-sm">
-            <h2 className="text-xl font-semibold">Información de Contacto</h2>
+            <h2 className="text-xl font-semibold">Información de contacto</h2>
 
             <p>Teléfono: (503) 7518-7650</p>
 
-            <p>Email: info@metalyplast.com</p>
+            <p>Email: Próximamente</p>
           </div>
 
           <div className="text-sm">
-            <h2 className="text-xl font-semibold">Horario de Atención</h2>
+            <h2 className="text-xl font-semibold">Horario de atención</h2>
 
-            <p>Lunes a viernes: 8:00 AM - 12:00 MD, 1:00 PM - 5:00 PM</p>
+            <p>Lunes a viernes: 8:00 a. m. - 12:00 m. d., 1:00 p. m. - 5:00 p. m.</p>
 
-            <p>Sábado: 8:00 AM - 12:00 MD</p>
+            <p>Sábado: 8:00 a. m. - 12:00 m. d.</p>
 
             <p>Domingo: Cerrado</p>
           </div>
         </div>
       </div>
 
-      <h2 className="text-2xl font-semibold mt-8">Envíanos un mensaje</h2>
+      <h2 className="text-2xl font-semibold mt-8" style={{ display: "none" }}>
+        Envíanos un mensaje
+      </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6" style={{ display: "none" }}>
         <form className="space-y-4">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -84,7 +86,7 @@ export default function Contact() {
             <Textarea id="message" placeholder="Escribe tu mensaje aquí..." />
           </div>
 
-          <DefaultButton type="submit">Enviar Mensaje</DefaultButton>
+          <DefaultButton type="submit">Enviar mensaje</DefaultButton>
         </form>
       </div>
     </div>

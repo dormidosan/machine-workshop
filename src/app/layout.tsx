@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ChatBot from "@/components/ChatBot";
+// Supports weights 100-900
+import "@fontsource-variable/inter";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -14,6 +16,7 @@ import ChatBot from "@/components/ChatBot";
 //   variable: "--font-geist-mono",
 //   subsets: ["latin"],
 // });
+// add style to body  font-family: 'Inter Variable', sans-serif;
 
 export const metadata: Metadata = {
   title: "Precision Machining Workshop",
@@ -27,9 +30,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+      </head>
       <body className="bg-gray-50 antialiased">
         <Header />
-        <main className="container bg-gray mx-auto px-4 py-8">{children}</main>
+        <main className="bg-gray mx-auto p-6 py-8">{children}</main>
         <Footer />
         <ChatBot />
       </body>

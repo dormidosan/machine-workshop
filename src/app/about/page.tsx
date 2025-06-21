@@ -101,7 +101,7 @@ export default function About() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Card>
+        <Card className="border-[#e5e5e5]">
           <CardHeader>
             <CardTitle>Nuestra Historia</CardTitle>
           </CardHeader>
@@ -114,7 +114,7 @@ export default function About() {
             </p>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="border-[#e5e5e5]">
           <CardHeader>
             <CardTitle>Nuestro Equipo</CardTitle>
           </CardHeader>
