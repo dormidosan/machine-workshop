@@ -1,16 +1,32 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import tseslint from "typescript-eslint";
+import globals from "globals";
+import pluginReact from "eslint-plugin-react";
+import pluginPrettier from "eslint-plugin-prettier";
+import pluginImport from "eslint-plugin-import";
+import configPrettier from "eslint-config-prettier";
+import { defineConfig } from "eslint/config";
+import js from "@eslint/js";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-];
-
-export default eslintConfig;
+export default defineConfig([
+  {
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    plugins: { js },
+    extends: ["js/recommended"],
+  },
+  {
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    languageOptions: { globals: { ...globals.browser, ...globals.node } },
+  },
+  tseslint.configs.recommended,
+  pluginReact.configs.flat.recommended,
+  {
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    plugins: { prettier: pluginPrettier, import: pluginImport },
+    rules: {
+      "prettier/prettier": "error",
+      "react/react-in-jsx-scope": "off",
+      "import/order": ["error", { alphabetize: { order: "desc" } }],
+    },
+    extends: [configPrettier],
+  },
+]);
