@@ -58,6 +58,7 @@ export default function About() {
               <div className="flex-[0_0_33.33%] min-w-0 pl-1" key={index}>
                 <div className="p-1 aspect-[4/3] relative">
                   <Image
+                    className="rounded-xl"
                     src={src || "/placeholder.svg"}
                     alt={`Workshop image ${index + 1}`}
                     fill
@@ -101,9 +102,9 @@ export default function About() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Card className="border-[#e5e5e5]">
+        <Card className="border-[#e5e5e5] py-4">
           <CardHeader>
-            <CardTitle>Nuestra Historia</CardTitle>
+            <CardTitle className="text-2xl">Nuestra Historia</CardTitle>
           </CardHeader>
           <CardContent>
             <p>
@@ -114,9 +115,9 @@ export default function About() {
             </p>
           </CardContent>
         </Card>
-        <Card className="border-[#e5e5e5]">
+        <Card className="border-[#e5e5e5] py-4">
           <CardHeader>
-            <CardTitle>Nuestro Equipo</CardTitle>
+            <CardTitle className="text-2xl">Nuestro Equipo</CardTitle>
           </CardHeader>
           <CardContent>
             <p>

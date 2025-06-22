@@ -35,7 +35,7 @@ export default function RootLayout({
       </head>
       <body className="bg-gray-50 antialiased">
         <Header />
-        <main className="bg-gray mx-auto p-6 py-8">{children}</main>
+        <main className="bg-gray mx-auto p-6 py-6">{children}</main>
         <Footer />
         <ChatBot />
       </body>

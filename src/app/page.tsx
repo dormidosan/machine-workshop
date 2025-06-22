@@ -16,12 +16,13 @@ export default function Home() {
   return (
     <div className="space-y-12">
       {/* Hero Carousel */}
-      <div className="w-full h-[65vh] mx-auto overflow-hidden relative" ref={emblaRef}>
-        <div className="flex h-full">
+      <div className="w-full h-[65vh] mx-auto overflow-hidden relative rounded-sm " ref={emblaRef}>
+        <div className="flex h-full ">
           {homeCarouselImages.map((src, index) => (
             <div className="flex-[0_0_100%] min-w-0 h-full" key={index}>
               <div className="relative w-full h-full">
                 <Image
+                  className=""
                   src={src || "/placeholder.svg"}
                   alt={`Workshop image ${index + 1}`}
                   fill
@@ -67,10 +68,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">Nuestras Especialidades</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="border-t-4 border-t-blue-500">
+            <Card className="border-1 border-gray-200 rounded-md shadow-xl border-t-4 border-t-blue-500 py-8 rounded-t-md">
               <CardHeader className="pb-2">
                 <Tool className="h-10 w-10 text-blue-500 mb-2" />
-                <CardTitle>Servicios de Torno</CardTitle>
+                <CardTitle className="text-lg">Servicios de Torno</CardTitle>
                 <CardDescription>Precisión en piezas cilíndricas</CardDescription>
               </CardHeader>
               <CardContent>
@@ -91,7 +92,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="border-t-4 border-t-teal-500">
+            <Card className="border-1 border-gray-200 rounded-md shadow-xl border-t-4 border-t-teal-500 py-8 rounded-t-md">
               <CardHeader className="pb-2">
                 <Settings className="h-10 w-10 text-teal-500 mb-2" />
                 <CardTitle>Servicios de Fresadora</CardTitle>
@@ -115,7 +116,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="border-t-4 border-t-purple-500">
+            <Card className="border-1 border-gray-200 rounded-md shadow-xl border-t-4 border-t-purple-500 py-8 rounded-t-md">
               <CardHeader className="pb-2">
                 <Cog className="h-10 w-10 text-purple-500 mb-2" />
                 <CardTitle>Servicios de CNC</CardTitle>
