@@ -2,11 +2,7 @@ import * as React from "react";
 
 function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
-    <div
-      data-slot="card"
-      className={`bg-card text-card-foreground flex flex-col ${className || ""}`}
-      {...props}
-    />
+    <div data-slot="card" className={`bg-card text-[#0A0A0A] flex flex-col ${className || ""}`} {...props} />
   );
 }
 

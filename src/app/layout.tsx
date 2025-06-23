@@ -33,7 +33,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" />
       </head>
-      <body className="bg-gray-50 antialiased">
+      <body className="text-[#444] bg-gray-50 antialiased">
         <Header />
         <main className="bg-gray mx-auto p-6 py-6">{children}</main>
         <Footer />

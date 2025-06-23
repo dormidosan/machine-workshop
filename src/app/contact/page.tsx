@@ -41,7 +41,7 @@ export default function Contact() {
 
             <p>Teléfono: (503) 7518-7650</p>
 
-            <p>Email: Próximamente</p>
+            <p>Email: ventas@metalyplast.com</p>
           </div>
 
           <div className="text-sm">

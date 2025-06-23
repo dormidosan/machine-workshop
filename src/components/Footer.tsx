@@ -68,9 +68,9 @@ export default function Footer() {
                 <Phone className="h-4 w-4 text-blue-400" />
                 <span className="text-gray-300">(503) 7518-7650</span>
               </li>
-              <li className="flex items-center gap-2" style={{ display: "none" }}>
+              <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300"> Próximamente</span>
+                <span className="text-gray-300"> ventas@metalyplast.com</span>
               </li>
             </ul>
             <div className="flex gap-4 mt-4">
