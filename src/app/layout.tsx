@@ -19,8 +19,8 @@ import "@fontsource-variable/inter";
 // add style to body  font-family: 'Inter Variable', sans-serif;
 
 export const metadata: Metadata = {
-  title: "Precision Machining Workshop",
-  description: "Expert lathe and milling services for all your machining needs",
+  title: "Taller de Mecanizado de Precisión",
+  description: "Servicios expertos de torno y fresado para todas tus necesidades de mecanizado",
 };
 
 export default function RootLayout({
