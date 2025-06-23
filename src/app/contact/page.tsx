@@ -39,9 +39,13 @@ export default function Contact() {
           <div className="text-sm">
             <h2 className="text-xl font-semibold">Información de contacto</h2>
 
-            <p>Teléfono: (503) 7518-7650</p>
+            <p>
+              <a href="tel:75187650">(503) 7518-7650</a>
+            </p>
 
-            <p>Email: ventas@metalyplast.com</p>
+            <p>
+              <a href="mailto:ventas@metalyplast.com">Email: ventas@metalyplast.com</a>
+            </p>
           </div>
 
           <div className="text-sm">

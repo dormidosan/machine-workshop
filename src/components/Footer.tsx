@@ -66,11 +66,15 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">(503) 7518-7650</span>
+                <span className="text-gray-300">
+                  <a href="tel:75187650">(503) 7518-7650</a>
+                </span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300"> ventas@metalyplast.com</span>
+                <span className="text-gray-300">
+                  <a href="mailto:ventas@metalyplast.com">Email: ventas@metalyplast.com</a>
+                </span>
               </li>
             </ul>
             <div className="flex gap-4 mt-4">
