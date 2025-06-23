@@ -73,7 +73,7 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-blue-400" />
                 <span className="text-gray-300">
-                  <a href="mailto:ventas@metalyplast.com">Email: ventas@metalyplast.com</a>
+                  <a href="mailto:ventas@metalyplast.com">ventas@metalyplast.com</a>
                 </span>
               </li>
             </ul>

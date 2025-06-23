@@ -31,20 +31,20 @@ export default function Contact() {
           </div>
 
           <div className="text-sm">
-            <h2 className="text-xl font-semibold">Nuestra ubicación</h2>
+            <h2 className="text-2xl font-semibold py-2">Nuestra ubicación</h2>
 
             <p>Calle Principal, San Salvador, El Salvador</p>
           </div>
 
           <div className="text-sm">
-            <h2 className="text-xl font-semibold">Información de contacto</h2>
+            <h2 className="text-2xl font-semibold py-2">Información de contacto</h2>
 
-            <p>
+            <p className="text-lg text-[#2563eb] font-extrabold">
               <a href="tel:75187650">(503) 7518-7650</a>
             </p>
 
-            <p>
-              <a href="mailto:ventas@metalyplast.com">Email: ventas@metalyplast.com</a>
+            <p className="text-lg text-[#2563eb] font-extrabold">
+              <a href="mailto:ventas@metalyplast.com">ventas@metalyplast.com</a>
             </p>
           </div>
 
