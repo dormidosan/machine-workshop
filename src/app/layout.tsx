@@ -1,10 +1,11 @@
 import ReactGA from "react-ga4";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ChatBot from "@/components/ChatBot";
-import "@fontsource-variable/inter";
 
+import "@fontsource-variable/inter";
 import "./globals.css";
 
 ReactGA.initialize("G-XMNYFKZ942");
@@ -29,6 +30,7 @@ export default function RootLayout({
         <main className="bg-gray mx-auto p-6 py-6">{children}</main>
         <Footer />
         <ChatBot />
+        <Analytics />
       </body>
     </html>
   );
