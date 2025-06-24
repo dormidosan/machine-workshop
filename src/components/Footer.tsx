@@ -1,8 +1,30 @@
+"use client";
+import ReactGA from "react-ga4";
 import Link from "next/link";
 import { Instagram, Mail, MapPin, Phone, PenToolIcon as Tool } from "lucide-react";
 import { FacebookIcon } from "@/app/icons";
 
 export default function Footer() {
+  const registerMailEventGA = () => {
+    //Register when email link is clicked
+    console.log("Email link clicked");
+    ReactGA.event({
+      category: "Email",
+      action: "Email Link Clicked",
+      label: "User clicked the email link",
+    });
+  };
+
+  const registerPhoneEventGA = () => {
+    // Register when phone link is clicked
+    console.log("Phone link clicked");
+    ReactGA.event({
+      category: "Phone",
+      action: "Phone Link Clicked",
+      label: "User clicked the phone link",
+    });
+  };
+
   return (
     <footer className="bg-gray-800 text-white pt-8 pb-6">
       <div className="container mx-auto px-4">
@@ -67,13 +89,17 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-blue-400" />
                 <span className="text-gray-300">
-                  <a href="tel:75187650">(503) 7518-7650</a>
+                  <a href="tel:75187650" onClick={registerPhoneEventGA}>
+                    (503) 7518-7650
+                  </a>
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-blue-400" />
                 <span className="text-gray-300">
-                  <a href="mailto:ventas@metalyplast.com">ventas@metalyplast.com</a>
+                  <a href="mailto:ventas@metalyplast.com" onClick={registerMailEventGA}>
+                    ventas@metalyplast.com
+                  </a>
                 </span>
               </li>
             </ul>

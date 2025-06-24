@@ -1,18 +1,25 @@
 "use client";
 
+import ReactGA from "react-ga4";
 import { useState } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
 //import { useChat } from "ai/react";
 import { useChat } from "@ai-sdk/react";
 import { BasicButton, DefaultButton, GhostButton } from "@/components/buttons/DefaultButton";
 import { Card } from "@/components/Card";
-//import { ButtonBase } from "./buttons/ButtonBase";
-//import { Input } from "@/components/ui/input";
-//import { Button } from "@/components/ui/button";
 
 export default function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
   const { messages, input, handleInputChange, handleSubmit } = useChat();
+
+  const registerEventGA = () => {
+    // Register when Whatsapp button is clicked
+    ReactGA.event({
+      category: "Whatsapp",
+      action: "Whatsapp Button Clicked",
+      label: "User clicked the Whatsapp button",
+    });
+  };
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
@@ -70,6 +77,7 @@ export default function ChatBot() {
             href="https://wa.me/50375187650?text=Hola%2C%20me%20gustaria%20realizar%20una%20cotizacion..."
             target="_blank"
             rel="noopener noreferrer"
+            onClick={registerEventGA}
           >
             <BasicButton
               size="icon"

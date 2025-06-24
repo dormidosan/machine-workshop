@@ -1,26 +1,17 @@
+import ReactGA from "react-ga4";
 import type { Metadata } from "next";
-//import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ChatBot from "@/components/ChatBot";
-// Supports weights 100-900
 import "@fontsource-variable/inter";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
+import "./globals.css";
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-// add style to body  font-family: 'Inter Variable', sans-serif;
+ReactGA.initialize("G-XMNYFKZ942");
 
 export const metadata: Metadata = {
   title: "Taller de Mecanizado de Precisión",
-  description: "Servicios expertos de torno y fresado para todas tus necesidades de mecanizado",
+  description: "Servicios expertos de Torno, Fresado y CNC para todas tus necesidades de mecanizado",
 };
 
 export default function RootLayout({
@@ -33,7 +24,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" />
       </head>
-      <body className="text-[#444] bg-gray-50 antialiased">
+      <body className="text-[#444] bg-gray-50 antialiased vsc-initialized">
         <Header />
         <main className="bg-gray mx-auto p-6 py-6">{children}</main>
         <Footer />
