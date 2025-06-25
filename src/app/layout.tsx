@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import Header from "@/components/Header";
 import GAInit from "@/components/GAInit";
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Footer />
         <ChatBot />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

@@ -39,7 +39,7 @@ export default function Contact() {
           <div className="text-sm">
             <h2 className="text-2xl font-semibold py-2">Nuestra ubicación</h2>
 
-            <p>Calle Principal, San Salvador, El Salvador</p>
+            <p>Barrio la vega, calle argentina #110, San Salvador, El Salvador</p>
           </div>
 
           <div className="text-sm">
