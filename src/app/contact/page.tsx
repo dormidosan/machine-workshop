@@ -3,7 +3,7 @@ import { DefaultButton } from "@/components/buttons/DefaultButton";
 import { Textarea } from "@/components/TextArea";
 
 export const metadata = {
-  title: "Encuéntra taller de Torno, Fresa y CNC en San Salvador",
+  title: "Encuéntranos - Taller de Torno, Fresa y CNC",
   description:
     "Visítanos en nuestro taller de Torno, fresa y CNC mecanizado de precisión en San Salvador. Contáctanos por teléfono o correo electrónico para más información sobre nuestros servicios.",
 };

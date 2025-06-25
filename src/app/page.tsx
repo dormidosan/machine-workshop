@@ -41,7 +41,9 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h2 className="text-2xl md:text-4xl font-bold mb-2">Precisión y Calidad en Mecanizado</h2>
+                  <h2 className="text-2xl md:text-4xl font-bold mb-2">
+                    Taller de Torno, Fresa y CNC. Contamos con Precisión y Calidad en nuestros Servicios
+                  </h2>
                   <p className="text-lg md:text-xl max-w-2xl">
                     Soluciones de alta precisión para la industria manufacturera
                   </p>
@@ -55,7 +57,7 @@ export default function Home() {
       {/* Introduction Section */}
       <section className="text-center max-w-4xl mx-auto px-4">
         <h1 className="text-4xl font-bold mb-6">
-          Bienvenidos a taller
+          Bienvenidos al taller de torno, fresa y CNC{" "}
           <span className="bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-transparent">
             Metalyplast
           </span>

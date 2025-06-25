@@ -1,7 +1,7 @@
 import AboutClient from "./AboutClient";
 
 export const metadata = {
-  title: "Sobre nosotros",
+  title: "Sobre nosotros - Taller de Torno, Fresa y CNC Metalyplast",
   description:
     "Conoce la historia y el equipo de Metalyplast, un taller de mecanizado con más de 10 años de experiencia en la fabricación y mantenimiento de moldes de inyección y soplado, especializado en soluciones de Torno, Fresa de alta precisión y tecnología CNC.",
 };

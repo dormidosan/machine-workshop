@@ -10,7 +10,7 @@ import "@fontsource-variable/inter";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Taller de Mecanizado de Precisión",
+  title: "Taller de Torno, Fresa y CNC en San Salvador",
   description: "Servicios expertos de Torno, Fresado y CNC para todas tus necesidades de mecanizado",
 };
 
