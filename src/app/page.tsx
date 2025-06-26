@@ -69,10 +69,10 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <DefaultButton asChild size="lg" className="px-8">
-            <Link href="/services">Nuestros Servicios</Link>
+            <Link href="/servicios">Nuestros Servicios</Link>
           </DefaultButton>
           <OutlineButton asChild size="lg" className="px-8 bg-gray-100 hover:bg-gray-200">
-            <Link href="/contact">Contáctanos</Link>
+            <Link href="/contacto">Contáctanos</Link>
           </OutlineButton>
         </div>
       </section>
@@ -244,7 +244,7 @@ export default function Home() {
             equipo de expertos está listo para ayudarte.
           </p>
           <DefaultButton asChild size="lg" className="px-8 m-2">
-            <Link href="/contact">Solicitar Cotización</Link>
+            <Link href="/contacto">Solicitar Cotización</Link>
           </DefaultButton>
           <a
             href="https://wa.me/50375187650?text=Hola%2C%20me%20gustaria%20realizar%20una%20cotizacion..."

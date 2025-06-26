@@ -65,7 +65,7 @@ export default function Header() {
       </div>
 
       {/* Content container */}
-      <div className="container mx-auto px-2 py-5 relative">
+      <div className="container mx-auto px-6 py-5 relative">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div>
@@ -91,7 +91,7 @@ export default function Header() {
               </li>
               <li className="px-5">
                 <Link
-                  href="/about"
+                  href="/sobre-nosotros"
                   className="text-white hover:text-blue-400 transition-colors duration-200 font-medium relative group py-2"
                 >
                   Nosotros
@@ -100,7 +100,7 @@ export default function Header() {
               </li>
               <li className="px-5">
                 <Link
-                  href="/services"
+                  href="/servicios"
                   className="text-white hover:text-blue-400 transition-colors duration-200 font-medium relative group py-2"
                 >
                   Servicios
@@ -109,7 +109,7 @@ export default function Header() {
               </li>
               <li className="px-5">
                 <Link
-                  href="/contact"
+                  href="/contacto"
                   className="text-white hover:text-blue-400 transition-colors duration-200 font-medium relative group py-2"
                 >
                   Contacto
@@ -157,7 +157,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/sobre-nosotros"
                   className="block py-2 text-white hover:text-blue-400 transition-colors duration-200"
                   onClick={closeMenu}
                 >
@@ -166,7 +166,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="/servicios"
                   className="block py-2 text-white hover:text-blue-400 transition-colors duration-200"
                   onClick={closeMenu}
                 >
@@ -175,7 +175,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/contacto"
                   className="block py-2 text-white hover:text-blue-400 transition-colors duration-200"
                   onClick={closeMenu}
                 >

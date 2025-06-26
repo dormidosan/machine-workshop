@@ -38,7 +38,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-300 text-sm">
-              Especialistas en trabajos de torno, fresa y CNC con más de 10 años de experiencia en el sector.
+              Taller de torno, fresa y CNC con más de 10 años de experiencia en el sector. Especialistas en
+              trabajos de alta calidad.
             </p>
           </div>
 
@@ -53,7 +54,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/sobre-nosotros"
                   className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
                 >
                   Nosotros
@@ -61,7 +62,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="/servicios"
                   className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
                 >
                   Servicios
@@ -69,7 +70,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/contacto"
                   className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
                 >
                   Contacto
