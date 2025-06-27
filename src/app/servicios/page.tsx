@@ -2,7 +2,8 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/Card";
 
 export const metadata = {
-  title: "Servicios de Torno, Fresa y CNC",
+  title: "Servicios de Torno, Fresa y CNC en San Salvador",
+
   description:
     "Visítanos en nuestro taller de Torno, fresa y CNC mecanizado de precisión en San Salvador. Ofrecemos servicios de fabricación de moldes, torneado, fresado y CNC para satisfacer todas tus necesidades de matricería.",
 };

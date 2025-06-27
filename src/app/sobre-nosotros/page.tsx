@@ -1,9 +1,9 @@
 import AboutClient from "./AboutClient";
 
 export const metadata = {
-  title: "Sobre nosotros - Taller de Torno, Fresa y CNC Metalyplast",
+  title: "Sobre Nosotros – Taller CNC y Moldes Metalyplast en San Salvador",
   description:
-    "Conoce la historia y el equipo de Metalyplast, un taller de mecanizado con más de 10 años de experiencia en la fabricación y mantenimiento de moldes de inyección y soplado, especializado en soluciones de Torno, Fresa de alta precisión y tecnología CNC.",
+    "Metalyplast: Taller de mecanizado en San Salvador con 10+ años de experiencia en moldes de inyección, soplado y soluciones de torno, fresa y CNC de alta precisión.",
 };
 
 export default function About() {
