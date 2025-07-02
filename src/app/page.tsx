@@ -42,7 +42,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <h2 className="text-2xl md:text-4xl font-bold mb-2">
-                    Taller de Torno, Fresa y CNC. Contamos con Precisión y Calidad en nuestros Servicios
+                    Taller de Torno, Fresa y CNC. Fabricacion de Moldes de Inyección y Soplado.
                   </h2>
                   <p className="text-lg md:text-xl max-w-2xl">
                     Soluciones de alta precisión para la industria manufacturera
@@ -63,9 +63,8 @@ export default function Home() {
           </span>
         </h1>
         <p className="text-xl mb-8">
-          En nuestro taller somos especialistas en trabajos de precisión en torno, fresa y CNC, ofreciendo
-          soluciones integrales para la industria de moldes de inyección y componentes mecánicos de alta
-          precisión.
+          Taller de torno, fresa y CNC, ofreciendo soluciones integrales para la industria de moldes de
+          inyección y componentes mecánicos de alta precisión.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <DefaultButton asChild size="lg" className="px-8">

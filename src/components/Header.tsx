@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { PenToolIcon } from "@/app/icons";
+import { LogoIcon } from "./Icons";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,7 +70,8 @@ export default function Header() {
           {/* Logo */}
           <div>
             <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-              <PenToolIcon className="h-6 w-6 text-blue-400" />
+              {/* <PenToolIcon className="h-6 w-6 text-blue-400" /> */}
+              <LogoIcon className="h-6 w-6 text-blue-400" />
               <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">
                 Metalyplast
               </span>

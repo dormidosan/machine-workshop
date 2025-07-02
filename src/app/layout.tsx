@@ -10,7 +10,7 @@ import "@fontsource-variable/inter";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Servicios de Torno, Fresa y CNC en San Salvador | Metalyplast",
+  title: "Taller de Torno y CNC Metalyplast | San Salvador",
   description:
     "Expertos en mecanizado de precisión, fabricación y mantenimiento de moldes de inyección y soplado. Más de 10 años de experiencia en torno, fresa y CNC en San Salvador.",
   openGraph: {
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
       "Expertos en mecanizado de precisión, fabricación y mantenimiento de moldes de inyección y soplado. Más de 10 años de experiencia en torno, fresa y CNC en San Salvador.",
     url: "https://metalyplast.com/",
     type: "website",
+    siteName: "Taller Torno y CNC Metalyplast",
     images: [
       {
         url: "https://metalyplast.com/logo.jpg",
@@ -34,10 +35,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", type: "image/x-icon" },
-      //{ url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      //{ url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     ],
-    //apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    apple: [{ url: "/apple-touch-icon-180x180.png", sizes: "180x180", type: "image/png" }],
   },
 };
 
@@ -50,6 +51,7 @@ export default function RootLayout({
     <html lang="es">
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://metalyplast.com/" />
       </head>
       <body className="text-[#444] bg-gray-50 antialiased vsc-initialized">
         <GAInit />
