@@ -8,10 +8,23 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Redirect old /contact to /contacto
       {
-        source: "/contact", // Old URL
-        destination: "/contacto", // New URL
-        permanent: true, // true = 308 (permanent), works like 301 for SEO
+        source: "/contact",
+        destination: "/contacto",
+        permanent: true,
+      },
+      // Redirect non-www to www
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "metalyplast.com",
+          },
+        ],
+        destination: "https://www.metalyplast.com/:path*",
+        permanent: true,
       },
     ];
   },

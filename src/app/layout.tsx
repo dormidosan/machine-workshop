@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     title: "Servicios de Torno, Fresa y CNC en San Salvador | Metalyplast",
     description:
       "Expertos en mecanizado de precisión, fabricación y mantenimiento de moldes de inyección y soplado. Más de 10 años de experiencia en torno, fresa y CNC en San Salvador.",
-    url: "https://metalyplast.com/",
+    url: "https://www.metalyplast.com/",
     type: "website",
     siteName: "Taller Torno y CNC Metalyplast",
     images: [
       {
-        url: "https://metalyplast.com/logo.jpg",
+        url: "https://www.metalyplast.com/logo.jpg",
         width: 1200,
         height: 630,
         alt: "Torno, Fresa y CNC en San Salvador",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://metalyplast.com/",
+    canonical: "https://www.metalyplast.com/",
   },
   icons: {
     icon: [
@@ -51,7 +51,7 @@ export default function RootLayout({
     <html lang="es">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://metalyplast.com/" />
+        <link rel="canonical" href="https://www.metalyplast.com/" />
       </head>
       <body className="text-[#444] bg-gray-50 antialiased vsc-initialized">
         <GAInit />
