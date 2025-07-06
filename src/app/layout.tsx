@@ -12,11 +12,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Taller de Torno y CNC Metalyplast | San Salvador",
   description:
-    "Expertos en mecanizado de precisión, fabricación y mantenimiento de moldes de inyección y soplado. Más de 10 años de experiencia en torno, fresa y CNC en San Salvador.",
+    "Expertos en fabricación y mantenimiento de moldes de inyección y soplado. Más de 10 años de experiencia en torno, fresa y CNC en San Salvador.",
   openGraph: {
     title: "Servicios de Torno, Fresa y CNC en San Salvador | Metalyplast",
     description:
-      "Expertos en mecanizado de precisión, fabricación y mantenimiento de moldes de inyección y soplado. Más de 10 años de experiencia en torno, fresa y CNC en San Salvador.",
+      "Expertos en fabricación y mantenimiento de moldes de inyección y soplado. Más de 10 años de experiencia en torno, fresa y CNC en San Salvador.",
     url: "https://www.metalyplast.com/",
     type: "website",
     siteName: "Taller Torno y CNC Metalyplast",

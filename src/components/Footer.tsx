@@ -9,7 +9,7 @@ export default function Footer() {
     //Register when email link is clicked
     console.log("Email link clicked");
     ReactGA.event({
-      category: "Email",
+      category: "click",
       action: "Email Link Clicked",
       label: "User clicked the email link",
     });
@@ -19,7 +19,7 @@ export default function Footer() {
     // Register when phone link is clicked
     console.log("Phone link clicked");
     ReactGA.event({
-      category: "Phone",
+      category: "click",
       action: "Phone Link Clicked",
       label: "User clicked the phone link",
     });

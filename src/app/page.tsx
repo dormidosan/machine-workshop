@@ -18,7 +18,7 @@ export default function Home() {
     // Register when Whatsapp button is clicked
     console.log("Whatsapp button clicked");
     ReactGA.event({
-      category: "Whatsapp",
+      category: "click",
       action: "Whatsapp Button Clicked",
       label: "Home clicked the Whatsapp button",
     });

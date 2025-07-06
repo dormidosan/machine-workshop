@@ -15,7 +15,7 @@ export default function ChatBot() {
   const registerEventGA = () => {
     // Register when Whatsapp button is clicked
     ReactGA.event({
-      category: "Whatsapp",
+      category: "click",
       action: "Whatsapp Button Clicked",
       label: "User clicked the Whatsapp button",
     });
