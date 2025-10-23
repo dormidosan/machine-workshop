@@ -26,9 +26,9 @@ export default function Contact() {
         </div>
 
         <div className="space-y-4">
-          <div className="relative h-48 w-full">
+          <div className="relative h-72 w-full">
             <Image
-              src="/images/direccion.webp"
+              src="/images/direccion-new.webp"
               alt="Entrada principal del taller Metalyplast"
               layout="fill"
               objectFit="cover"
