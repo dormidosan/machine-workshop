@@ -25,43 +25,43 @@ export default function Contact() {
           ></iframe>
         </div>
 
-        <div className="space-y-4">
-          <div className="relative h-72 w-full">
-            <Image
-              src="/images/direccion-new.webp"
-              alt="Entrada principal del taller Metalyplast"
-              layout="fill"
-              objectFit="cover"
-              priority
-            />
+        <div className="space-y-6">
+          {/* IMAGE SECTION */}
+          <div className="relative w-full h-64 overflow-hidden rounded-2xl">
+            <div className="absolute inset-0">
+              <Image
+                src="/images/direccion-3.webp"
+                alt="Entrada principal del taller Metalyplast"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
           </div>
 
-          <div className="text-sm">
-            <h2 className="text-2xl font-semibold py-2">Nuestra ubicación</h2>
+          {/* TEXT SECTIONS */}
+          <div className="text-sm space-y-6">
+            <div>
+              <h2 className="text-2xl font-semibold py-2">Nuestra ubicación</h2>
+              <p>Barrio la Vega, calle Argentina #141, San Salvador, El Salvador</p>
+            </div>
 
-            <p>Barrio la vega, calle argentina #141, San Salvador, El Salvador</p>
-          </div>
+            <div>
+              <h2 className="text-2xl font-semibold py-2">Información de contacto</h2>
+              <p className="text-lg text-[#2563eb] font-extrabold">
+                <a href="tel:75187650">(503) 7518-7650</a>
+              </p>
+              <p className="text-lg text-[#2563eb] font-extrabold">
+                <a href="mailto:ventas@metalyplast.com">ventas@metalyplast.com</a>
+              </p>
+            </div>
 
-          <div className="text-sm">
-            <h2 className="text-2xl font-semibold py-2">Información de contacto</h2>
-
-            <p className="text-lg text-[#2563eb] font-extrabold">
-              <a href="tel:75187650">(503) 7518-7650</a>
-            </p>
-
-            <p className="text-lg text-[#2563eb] font-extrabold">
-              <a href="mailto:ventas@metalyplast.com">ventas@metalyplast.com</a>
-            </p>
-          </div>
-
-          <div className="text-sm">
-            <h2 className="text-xl font-semibold">Horario de atención</h2>
-
-            <p>Lunes a viernes: 8:00 a. m. - 12:00 m. d., 1:00 p. m. - 5:00 p. m.</p>
-
-            <p>Sábado: 8:00 a. m. - 12:00 m. d.</p>
-
-            <p>Domingo: Cerrado</p>
+            <div>
+              <h2 className="text-xl font-semibold py-2">Horario de atención</h2>
+              <p>Lunes a viernes: 8:00 a. m. - 12:00 m. d., 1:00 p. m. - 5:00 p. m.</p>
+              <p>Sábado: 8:00 a. m. - 12:00 m. d.</p>
+              <p>Domingo: Cerrado</p>
+            </div>
           </div>
         </div>
       </div>
