@@ -30,7 +30,7 @@ export default function Contact() {
           <div className="relative w-full h-64 overflow-hidden rounded-2xl">
             <div className="absolute inset-0">
               <Image
-                src="/images/direccion-3.webp"
+                src="/images/direccion-6.webp"
                 alt="Entrada principal del taller Metalyplast"
                 fill
                 className="object-cover"
